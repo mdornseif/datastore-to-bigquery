@@ -1,5 +1,5 @@
 {
-  "bin": "build/main/bin/bigqueryLoad.js",
+  "bin": "build/main/bin/datastore2bigquery",
   "name": "datastore-to-bigquery",
   "version": "1.0.2",
   "description": "Dump Google Cloud Datastore Contents and load them into BigQuery.",
@@ -52,6 +52,7 @@
   "devDependencies": {
     "@ava/typescript": "^1.1.1",
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
+    "@types/argparse": "^2.0.10",
     "@typescript-eslint/eslint-plugin": "^4.0.1",
     "@typescript-eslint/parser": "^4.0.1",
     "ava": "^3.12.1",

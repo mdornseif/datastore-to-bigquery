@@ -106,10 +106,13 @@ export async function loadOneKind(
       (r2[0].statistics.endTime - r2[0].statistics.startTime) / 1000;
     spinner.succeed(`Loading ${newKindName} done in ${timeUsed}s`);
   } catch (error) {
+    spinner.warn(`Loading ${newKindName} failed`);
     spinner.fail(error.message);
     throw error;
   }
 }
+
+const locationMap = { 'EUROPE-WEST3': 'EU', 'europe-west3': 'EU' };
 
 /** Ensure that a BigQuery Dataset exists */
 export async function ensureDataset(
@@ -118,6 +121,7 @@ export async function ensureDataset(
   spinner?,
   newDatasetLocation = 'US'
 ): Promise<Dataset> {
+  const location = locationMap[newDatasetLocation] || newDatasetLocation;
   let dataset: Dataset;
   spinner = spinner || ora({ isSilent: true });
   spinner.text = `checking BigQuery Dataset ${bigquery.projectId}${datasetName}`;
@@ -131,7 +135,7 @@ export async function ensureDataset(
     }
     // Create the dataset
     const [dataset] = await bigquery.createDataset(datasetName, {
-      location: newDatasetLocation,
+      location,
     });
     spinner.warn(` BigQuery Dataset ${dataset.id} created`);
   }
