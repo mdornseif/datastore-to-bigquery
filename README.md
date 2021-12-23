@@ -10,7 +10,7 @@ Dump Google Cloud Datastore Contents and load them into BigQuery.
 
 You can run it with [npx](https://www.npmjs.com/package/npx):
 
-```sh
+```
 % npx datastore-to-bigquery --help
 usage: datastore-to-bigquery [-h] [-b BUCKET] [-d BACKUPDIR] [-n BACKUPNAME] [-s NAMESPACE] [-p BQPROJECTID]
                              [--datasetName DATASETNAME]
