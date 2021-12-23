@@ -1,5 +1,8 @@
 {
-  "bin": "build/main/bin/datastore2bigquery.js",
+  "bin": {
+    "datastore-to-bigquery": "build/main/bin/datastore2bigquery.js",
+    "bigqueryLoad": "build/main/bin/bigqueryLoad.js"
+  },
   "name": "datastore-to-bigquery",
   "version": "1.2.2",
   "description": "Dump Google Cloud Datastore Contents and load them into BigQuery.",
