@@ -1,7 +1,7 @@
 {
   "bin": "build/main/bin/bigqueryLoad.js",
   "name": "datastore-to-bigquery",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Dump Google Cloud Datastore Contents and load them into BigQuery.",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
