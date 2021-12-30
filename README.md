@@ -4,7 +4,7 @@
 
 # datastore-to-bigquery
 
-Dump Google Cloud Datastore Contents and load them into BigQuery.
+The missing Data Transfer Tool: Dump Google Cloud Datastore contents and load them into BigQuery.
 
 ![Sample Output](https://raw.githubusercontent.com/mdornseif/datastore-to-bigquery/main/README.svg)
 
