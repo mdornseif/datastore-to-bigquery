@@ -114,7 +114,7 @@ await loadAllKindsFromPrefix(
 You can do it all at once with a single command:
 
 ```
-% npx datastore-to-bigquery <datastoreProject> -n <production> -b <bucket-tmp> -b <bigqueryProject>
+% npx datastore-to-bigquery <datastoreProject> -n <production> -b <bucket-tmp> -p <bigqueryProject>
 ```
 
 # Hints
