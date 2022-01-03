@@ -53,7 +53,7 @@
     "ora": "5.x.x"
   },
   "devDependencies": {
-    "@ava/typescript": "^1.1.1",
+    "@ava/typescript": "3.0.1",
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
     "@types/argparse": "^2.0.10",
     "@typescript-eslint/eslint-plugin": "^4.0.1",
