@@ -50,7 +50,7 @@
     "@google-cloud/storage": "^5.16.1",
     "argparse": "^2.0.1",
     "datastore-backup": "^1.0.8",
-    "ora": "5.x.x"
+    "ora": "6.x"
   },
   "devDependencies": {
     "@ava/typescript": "^1.1.1",
